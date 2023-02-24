@@ -6,8 +6,8 @@ import {
 	Tooltip,
 	useTheme,
 } from '@mui/material';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { Brightness4, Brightness7, GitHub } from '@mui/icons-material/';
+
 import { useThemeMode } from '@/hooks/useThemeMode';
 
 interface MenuItemsInterface {
@@ -41,11 +41,17 @@ const Header = () => {
 			<Box sx={{ flexGrow: 1 }} />
 			<Tooltip title={tooltip}>
 				<IconButton sx={{ ml: 1 }} onClick={handleDarkMode} color='inherit'>
-					{theme.palette.mode === 'dark' ? (
-						<Brightness7Icon />
-					) : (
-						<Brightness4Icon />
-					)}
+					{theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
+				</IconButton>
+			</Tooltip>
+			<Tooltip title='My GitHub Repository'>
+				<IconButton
+					sx={{ ml: 1 }}
+					href='https://github.com/Azzuri-UK'
+					target='_blank'
+					color='inherit'
+				>
+					<GitHub />
 				</IconButton>
 			</Tooltip>
 			{menuItems &&

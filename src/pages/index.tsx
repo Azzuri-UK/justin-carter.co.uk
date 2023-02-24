@@ -18,11 +18,11 @@ export default function Home() {
 				}}
 			>
 				<Image
+					priority
 					src={theme.palette.mode === 'dark' ? logoDark : logoLight}
 					alt={'Justin Carter logo'}
 				/>
 			</div>
-			,
 		</>
 	);
 }
