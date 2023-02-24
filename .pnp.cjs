@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.11"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-next", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:13.2.1"],\
+            ["eslint-config-prettier", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:8.6.0"],\
             ["husky", "npm:8.0.3"],\
             ["lint-staged", "npm:13.1.2"],\
             ["next", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:13.2.1"],\
@@ -1862,6 +1863,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["eslint-config-prettier", [\
+        ["npm:8.6.0", {\
+          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.6.0-00192c9409-ff0d0dfc83.zip/node_modules/eslint-config-prettier/",\
+          "packageDependencies": [\
+            ["eslint-config-prettier", "npm:8.6.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:8.6.0", {\
+          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-a5101129a8/0/cache/eslint-config-prettier-npm-8.6.0-00192c9409-ff0d0dfc83.zip/node_modules/eslint-config-prettier/",\
+          "packageDependencies": [\
+            ["eslint-config-prettier", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:8.6.0"],\
+            ["@types/eslint", null],\
+            ["eslint", "npm:8.34.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/eslint",\
+            "eslint"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["eslint-import-resolver-node", [\
         ["npm:0.3.7", {\
           "packageLocation": "./.yarn/cache/eslint-import-resolver-node-npm-0.3.7-65bed19543-3379aacf1d.zip/node_modules/eslint-import-resolver-node/",\
@@ -3260,6 +3283,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.11"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-next", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:13.2.1"],\
+            ["eslint-config-prettier", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:8.6.0"],\
             ["husky", "npm:8.0.3"],\
             ["lint-staged", "npm:13.1.2"],\
             ["next", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:13.2.1"],\

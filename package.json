@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "next-lint": "next lint",
+    "lint": "yarn run eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "format": "prettier --write \"./src\""
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "yarn run format",
+      "yarn run eslint --ext .js,.jsx,.ts,.tsx ./src"
+    ]
   },
   "dependencies": {
     "@types/node": "18.14.1",
@@ -23,6 +31,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
+    "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4"
