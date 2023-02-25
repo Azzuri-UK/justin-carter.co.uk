@@ -6,7 +6,12 @@ import {
 	Tooltip,
 	useTheme,
 } from '@mui/material';
-import { Brightness4, Brightness7, GitHub } from '@mui/icons-material/';
+import {
+	Brightness4,
+	Brightness7,
+	GitHub,
+	LinkedIn,
+} from '@mui/icons-material/';
 
 import { useThemeMode } from '@/hooks/useThemeMode';
 
@@ -44,7 +49,7 @@ const Header = () => {
 					{theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
 				</IconButton>
 			</Tooltip>
-			<Tooltip title='My GitHub Repository'>
+			<Tooltip title='GitHub'>
 				<IconButton
 					sx={{ ml: 1 }}
 					href='https://github.com/Azzuri-UK'
@@ -52,6 +57,16 @@ const Header = () => {
 					color='inherit'
 				>
 					<GitHub />
+				</IconButton>
+			</Tooltip>
+			<Tooltip title='LinkedIn'>
+				<IconButton
+					sx={{ ml: 1 }}
+					href='https://www.linkedin.com/in/jcarter80/'
+					target='_blank'
+					color='inherit'
+				>
+					<LinkedIn />
 				</IconButton>
 			</Tooltip>
 			{menuItems &&
