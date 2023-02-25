@@ -18,6 +18,7 @@ import { useThemeMode } from '@/hooks/useThemeMode';
 interface MenuItemsInterface {
 	title: string;
 	href: string;
+	className?: string;
 }
 
 const menuItems: MenuItemsInterface[] = [
@@ -42,7 +43,7 @@ const Header = () => {
 			? 'Switch to light mode'
 			: 'Switch to dark mode';
 	return (
-		<Toolbar>
+		<Toolbar sx={{ width: '100vw' }}>
 			<Box sx={{ flexGrow: 1 }} />
 			<Tooltip title={tooltip}>
 				<IconButton sx={{ ml: 1 }} onClick={handleDarkMode} color='inherit'>
