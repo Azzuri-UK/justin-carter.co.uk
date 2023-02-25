@@ -17,11 +17,12 @@ export default function Home() {
 					transform: 'translate(-50%, -50%)',
 				}}
 			>
-				<Image
-					priority
-					src={theme.palette.mode === 'dark' ? logoDark : logoLight}
-					alt={'Justin Carter logo'}
-				/>
+				{theme.palette.mode === 'dark' && (
+					<Image priority={true} src={logoDark} alt={'Justin Carter logo'} />
+				)}
+				{theme.palette.mode === 'light' && (
+					<Image priority={true} src={logoLight} alt={'Justin Carter logo'} />
+				)}
 			</div>
 		</>
 	);

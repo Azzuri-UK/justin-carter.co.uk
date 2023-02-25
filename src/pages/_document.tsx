@@ -22,8 +22,6 @@ export default function Document() {
 					href='/favicon-16x16.png'
 				/>
 				<link rel='manifest' href='/site.webmanifest' />
-				<link rel='preload' href='/logo_fe_dark_low.webp' as='image' />
-				<link rel='preload' href='/logo_fe_light_low.webp' as='image' />
 			</Head>
 			<body>
 				<Main />
