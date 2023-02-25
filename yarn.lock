@@ -48,6 +48,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/polyfill@npm:^7.2.5":
+  version: 7.12.1
+  resolution: "@babel/polyfill@npm:7.12.1"
+  dependencies:
+    core-js: ^2.6.5
+    regenerator-runtime: ^0.13.4
+  checksum: 3f59a9d85a41b390b044a1be13e11ae6d8efbfcf4e07217964585c7cef337b828eecfc5e164083227189146d2b6efc1affae8f59c831438eb40b848ab6fe5f39
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
   version: 7.21.0
   resolution: "@babel/runtime@npm:7.21.0"
@@ -445,6 +455,16 @@ __metadata:
     minimatch: ^3.1.2
     strip-json-comments: ^3.1.1
   checksum: cd3e5a8683db604739938b1c1c8b77927dc04fce3e28e0c88e7f2cd4900b89466baf83dfbad76b2b9e4d2746abdd00dd3f9da544d3e311633d8693f327d04cd7
+  languageName: node
+  linkType: hard
+
+"@fullpage/react-fullpage@npm:^0.1.33":
+  version: 0.1.33
+  resolution: "@fullpage/react-fullpage@npm:0.1.33"
+  dependencies:
+    "@babel/polyfill": ^7.2.5
+    fullpage.js: ^4.0.17
+  checksum: 3987372d96f2e1c969d290a1ff55461a2ac22658a708f15c1b0d8e75a6fd361b567c9341ced8bb5195f87fc093a88c27a7acce335e5cc526f23301f88c7dc1f7
   languageName: node
   linkType: hard
 
@@ -1847,6 +1867,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^2.6.5":
+  version: 2.6.12
+  resolution: "core-js@npm:2.6.12"
+  checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
+  languageName: node
+  linkType: hard
+
 "cosmiconfig-typescript-loader@npm:^4.0.0":
   version: 4.3.0
   resolution: "cosmiconfig-typescript-loader@npm:4.3.0"
@@ -2994,6 +3021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fullpage.js@npm:^4.0.17":
+  version: 4.0.17
+  resolution: "fullpage.js@npm:4.0.17"
+  checksum: 63caada128cbe2a8ece36b41ad289106eb539c3f9fbed36e4504b10a4e15fe1b02141fb32f1cdd793c826f6dab2bb15aeaed2f99a08fbe88cc557f2e0ff36389
+  languageName: node
+  linkType: hard
+
 "function-bind@npm:^1.1.1":
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
@@ -3944,6 +3978,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.4.4
     "@emotion/react": ^11.10.6
     "@emotion/styled": ^11.10.6
+    "@fullpage/react-fullpage": ^0.1.33
     "@mui/icons-material": ^5.11.9
     "@mui/material": ^5.11.10
     "@types/node": 18.14.1
@@ -5291,7 +5326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.13.11":
+"regenerator-runtime@npm:^0.13.11, regenerator-runtime@npm:^0.13.4":
   version: 0.13.11
   resolution: "regenerator-runtime@npm:0.13.11"
   checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4

@@ -2,6 +2,7 @@ import {
 	Box,
 	Button,
 	IconButton,
+	styled,
 	Toolbar,
 	Tooltip,
 	useTheme,
@@ -21,20 +22,12 @@ interface MenuItemsInterface {
 	className?: string;
 }
 
-const menuItems: MenuItemsInterface[] = [
-	// {
-	// 	title: 'Home',
-	// 	href: '/',
-	// },
-	// {
-	// 	title: 'CV',
-	// 	href: '/cv',
-	// },
-	// {
-	// 	title: 'Storybook',
-	// 	href: '/storybook',
-	// },
-];
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+	backgroundColor: theme.palette.background.default,
+	zIndex: 1000,
+	width: '100vw',
+}));
+
 const Header = () => {
 	const theme = useTheme();
 	const { handleDarkMode } = useThemeMode();
@@ -43,7 +36,7 @@ const Header = () => {
 			? 'Switch to light mode'
 			: 'Switch to dark mode';
 	return (
-		<Toolbar sx={{ width: '100vw' }}>
+		<StyledToolbar>
 			<Box sx={{ flexGrow: 1 }} />
 			<Tooltip title={tooltip}>
 				<IconButton sx={{ ml: 1 }} onClick={handleDarkMode} color='inherit'>
@@ -70,13 +63,7 @@ const Header = () => {
 					<LinkedIn />
 				</IconButton>
 			</Tooltip>
-			{menuItems &&
-				menuItems.map((item: MenuItemsInterface, index) => (
-					<Button key={index} href={item.href}>
-						{item.title}
-					</Button>
-				))}
-		</Toolbar>
+		</StyledToolbar>
 	);
 };
 export default Header;

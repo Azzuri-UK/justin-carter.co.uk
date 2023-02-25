@@ -1,45 +1,57 @@
-import { Box, useTheme } from '@mui/material';
-import Image from 'next/image';
-import { styled } from '@mui/material/styles';
-import lightLogo from '../../public/logo_fe_light_low.webp';
-import darkLogo from '../../public/logo_fe_dark_low.webp';
+import { IconButton, Typography } from '@mui/material';
 
-const LogoContainer = styled(Box)(({ theme }) => ({
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	height: '80vh',
-	width: '90%',
-	backgroundColor: theme.palette.background.paper,
-	position: 'relative',
-	[theme.breakpoints.down('sm')]: {
-		height: '40vh',
-	},
-	maxHeight: 750,
-	maxWidth: 1000,
-}));
-
-const CenteredLogo = styled(Box)(({ theme }) => ({
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	height: '90vh',
-}));
+import { KeyboardArrowDown, KeyboardArrowUp } from '@mui/icons-material';
+import ReactFullpage from '@fullpage/react-fullpage';
+import LogoSection from '@/components/LogoSection';
+import AboutSection from '@/components/AboutSection';
+import { useEffect, useState } from 'react';
 
 const IndexPage = () => {
-	const theme = useTheme();
-	let LogoImage: JSX.Element;
-	if (theme.palette.mode === 'dark') {
-		LogoImage = <Image src={darkLogo} alt='Justin Carter Logo' fill priority />;
-	} else {
-		LogoImage = (
-			<Image src={lightLogo} alt='Justin Carter Logo' fill priority />
-		);
-	}
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		function handleResize() {
+			setIsMobile(window.innerWidth <= 410);
+		}
+
+		handleResize(); // set initial value
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 	return (
-		<CenteredLogo>
-			<LogoContainer>{LogoImage}</LogoContainer>
-		</CenteredLogo>
+		<ReactFullpage
+			licenseKey={process.env.NEXT_PUBLIC_FULLPAGE_KEY}
+			scrollingSpeed={1000}
+			scrollOverflow={false}
+			paddingBottom={'100px'}
+			responsiveWidth={410}
+			render={({ state, fullpageApi }) => {
+				return (
+					<div id='fullpage-wrapper'>
+						<div style={{ height: '100vh' }} className='section'>
+							<LogoSection />
+							{!isMobile && (
+								<>
+									<Typography>About Me</Typography>
+									<IconButton onClick={() => fullpageApi.moveSectionDown()}>
+										<KeyboardArrowDown />
+									</IconButton>
+								</>
+							)}
+						</div>
+						<div style={{ height: '100vh' }} className='section'>
+							<AboutSection />
+						</div>
+					</div>
+				);
+			}}
+			credits={{
+				enabled: false,
+				label: 'Made with fullpage.js',
+				position: 'right',
+			}}
+		/>
 	);
 };
 

@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:17.4.4"],\
             ["@emotion/react", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:11.10.6"],\
             ["@emotion/styled", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:11.10.6"],\
+            ["@fullpage/react-fullpage", "npm:0.1.33"],\
             ["@mui/icons-material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.9"],\
             ["@mui/material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.10"],\
             ["@types/node", "npm:18.14.1"],\
@@ -99,6 +100,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-validator-identifier", "npm:7.19.1"],\
             ["chalk", "npm:2.4.2"],\
             ["js-tokens", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/polyfill", [\
+        ["npm:7.12.1", {\
+          "packageLocation": "./.yarn/cache/@babel-polyfill-npm-7.12.1-a393b8d870-3f59a9d85a.zip/node_modules/@babel/polyfill/",\
+          "packageDependencies": [\
+            ["@babel/polyfill", "npm:7.12.1"],\
+            ["core-js", "npm:2.6.12"],\
+            ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -572,6 +584,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-yaml", "npm:4.1.0"],\
             ["minimatch", "npm:3.1.2"],\
             ["strip-json-comments", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@fullpage/react-fullpage", [\
+        ["npm:0.1.33", {\
+          "packageLocation": "./.yarn/cache/@fullpage-react-fullpage-npm-0.1.33-04b78d1598-3987372d96.zip/node_modules/@fullpage/react-fullpage/",\
+          "packageDependencies": [\
+            ["@fullpage/react-fullpage", "npm:0.1.33"],\
+            ["@babel/polyfill", "npm:7.12.1"],\
+            ["fullpage.js", "npm:4.0.17"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2334,6 +2357,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["core-js", [\
+        ["npm:2.6.12", {\
+          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",\
+          "packageDependencies": [\
+            ["core-js", "npm:2.6.12"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cosmiconfig", [\
         ["npm:7.1.0", {\
           "packageLocation": "./.yarn/cache/cosmiconfig-npm-7.1.0-13a5090bcd-c53bf7befc.zip/node_modules/cosmiconfig/",\
@@ -3935,6 +3967,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fullpage.js", [\
+        ["npm:4.0.17", {\
+          "packageLocation": "./.yarn/cache/fullpage.js-npm-4.0.17-0d4a3834f4-63caada128.zip/node_modules/fullpage.js/",\
+          "packageDependencies": [\
+            ["fullpage.js", "npm:4.0.17"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["function-bind", [\
         ["npm:1.1.1", {\
           "packageLocation": "./.yarn/cache/function-bind-npm-1.1.1-b56b322ae9-b32fbaebb3.zip/node_modules/function-bind/",\
@@ -5020,6 +5061,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:17.4.4"],\
             ["@emotion/react", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:11.10.6"],\
             ["@emotion/styled", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:11.10.6"],\
+            ["@fullpage/react-fullpage", "npm:0.1.33"],\
             ["@mui/icons-material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.9"],\
             ["@mui/material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.10"],\
             ["@types/node", "npm:18.14.1"],\
