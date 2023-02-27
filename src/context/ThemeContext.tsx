@@ -33,6 +33,7 @@ export function ThemeContextProvider({
 	}, [prefersDarkMode]);
 
 	const handleDarkMode = () => {
+		console.log('hi');
 		if (darkMode) {
 			localStorage.setItem('theme', 'light');
 			setDarkMode(false);

@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fullpage/react-fullpage", "npm:0.1.33"],\
             ["@mui/icons-material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.9"],\
             ["@mui/material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.10"],\
+            ["@types/fullpage.js", "npm:2.9.3"],\
             ["@types/node", "npm:18.14.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
@@ -1204,6 +1205,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/fullpage.js", [\
+        ["npm:2.9.3", {\
+          "packageLocation": "./.yarn/cache/@types-fullpage.js-npm-2.9.3-da2fb212a1-6e8a3175cc.zip/node_modules/@types/fullpage.js/",\
+          "packageDependencies": [\
+            ["@types/fullpage.js", "npm:2.9.3"],\
+            ["@types/jquery", "npm:3.5.16"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/jquery", [\
+        ["npm:3.5.16", {\
+          "packageLocation": "./.yarn/cache/@types-jquery-npm-3.5.16-62a6b7d27d-13c995f15d.zip/node_modules/@types/jquery/",\
+          "packageDependencies": [\
+            ["@types/jquery", "npm:3.5.16"],\
+            ["@types/sizzle", "npm:2.3.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.11", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.11-79462ae5ca-527bddfe62.zip/node_modules/@types/json-schema/",\
@@ -1314,6 +1335,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
           "packageDependencies": [\
             ["@types/scheduler", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/sizzle", [\
+        ["npm:2.3.3", {\
+          "packageLocation": "./.yarn/cache/@types-sizzle-npm-2.3.3-9403924950-586a9fb1f6.zip/node_modules/@types/sizzle/",\
+          "packageDependencies": [\
+            ["@types/sizzle", "npm:2.3.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5064,6 +5094,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fullpage/react-fullpage", "npm:0.1.33"],\
             ["@mui/icons-material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.9"],\
             ["@mui/material", "virtual:6ba0b2a4d6393d335cb7f41ca37ed22f7660f0bb3e05b68b7f5eb07162f525f7866beecf940903160efea4b7765f779f76d240d8aef174e8c21cc82981c5843b#npm:5.11.10"],\
+            ["@types/fullpage.js", "npm:2.9.3"],\
             ["@types/node", "npm:18.14.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\

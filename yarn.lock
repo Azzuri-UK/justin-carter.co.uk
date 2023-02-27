@@ -922,6 +922,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/fullpage.js@npm:^2.9.3":
+  version: 2.9.3
+  resolution: "@types/fullpage.js@npm:2.9.3"
+  dependencies:
+    "@types/jquery": "*"
+  checksum: 6e8a3175cc726b95c7d7e3b12844763adfe623493c8aafd317de6f79f83709d77f66859ce09f4ae09ab026cc70327e91d7efc7f7eb901253bbc78422559fc560
+  languageName: node
+  linkType: hard
+
+"@types/jquery@npm:*":
+  version: 3.5.16
+  resolution: "@types/jquery@npm:3.5.16"
+  dependencies:
+    "@types/sizzle": "*"
+  checksum: 13c995f15d1c2f1d322103dc1cb0a22b95eecc3e7546f00279b8731aea21d7ec04550af40e609ee48e755d4e11bf61c25b4aa9f53df3bcbec4b8fe8e81471732
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.7":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -1013,6 +1031,13 @@ __metadata:
   version: 0.16.2
   resolution: "@types/scheduler@npm:0.16.2"
   checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
+  languageName: node
+  linkType: hard
+
+"@types/sizzle@npm:*":
+  version: 2.3.3
+  resolution: "@types/sizzle@npm:2.3.3"
+  checksum: 586a9fb1f6ff3e325e0f2cc1596a460615f0bc8a28f6e276ac9b509401039dd242fa8b34496d3a30c52f5b495873922d09a9e76c50c2ab2bcc70ba3fb9c4e160
   languageName: node
   linkType: hard
 
@@ -3981,6 +4006,7 @@ __metadata:
     "@fullpage/react-fullpage": ^0.1.33
     "@mui/icons-material": ^5.11.9
     "@mui/material": ^5.11.10
+    "@types/fullpage.js": ^2.9.3
     "@types/node": 18.14.1
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
